@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bawcimsiippf6"]
 
-[ext_resource type="Texture2D" uid="uid://dhrc6vqfb07lo" path="res://kenney_new-platformer-pack-1.1/Vector/Characters/character_pink_duck.svg" id="1_j153q"]
+[ext_resource type="Texture2D" uid="uid://bnlsqgil4gkg6" path="res://kenney_new-platformer-pack-1.1/Sprites/Characters/Double/character_pink_front.png" id="1_j153q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2bijx"]
-radius = 34.0147
+radius = 72.00694
 
 [node name="Node2D" type="Node2D" unique_id=2098684378]
 
@@ -13,5 +13,5 @@ radius = 34.0147
 texture = ExtResource("1_j153q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D" unique_id=311409879]
-position = Vector2(0, 18)
+position = Vector2(-1, 11)
 shape = SubResource("CircleShape2D_2bijx")
