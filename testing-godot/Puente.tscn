@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://diqypf0e5a1sn"]
+
+[ext_resource type="Texture2D" uid="uid://cbxvoa18aljan" path="res://kenney_new-platformer-pack-1.1/Vector/Tiles/block_blue.svg" id="1_l2auo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_soi0b"]
+size = Vector2(64, 64)
+
+[node name="Node2D" type="Node2D" unique_id=1102730740]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1800876642]
+position = Vector2(1, 0)
+texture = ExtResource("1_l2auo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=376438577]
+shape = SubResource("RectangleShape2D_soi0b")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=293120588]
+position = Vector2(64, 0)
+texture = ExtResource("1_l2auo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Sprite2D" unique_id=1178948240]
+shape = SubResource("RectangleShape2D_soi0b")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D" unique_id=2052364167]
+position = Vector2(64, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Sprite2D/Sprite2D" unique_id=62179856]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_soi0b")
+one_way_collision = true

@@ -5,6 +5,9 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_2bijx"]
 radius = 72.00694
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j153q"]
+size = Vector2(39, 61)
+
 [node name="Node2D" type="Node2D" unique_id=2098684378]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1523783215]
@@ -15,3 +18,10 @@ texture = ExtResource("1_j153q")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D" unique_id=311409879]
 position = Vector2(-1, 11)
 shape = SubResource("CircleShape2D_2bijx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D" unique_id=968347543]
+position = Vector2(-27, 88.5)
+shape = SubResource("RectangleShape2D_j153q")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D/CollisionShape2D2" unique_id=1388087520]
+position = Vector2(-27, 88.5)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bxl8cbcg7f88u"]
+
+[ext_resource type="Texture2D" uid="uid://5y7ksgtrikh8" path="res://kenney_new-platformer-pack-1.1/Vector/Tiles/bomb.svg" id="1_6rkkf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4b0ck"]
+radius = 24.0
+
+[node name="Node2D" type="Node2D" unique_id=1153073438]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1504856308]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1693650029]
+texture = ExtResource("1_6rkkf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Sprite2D" unique_id=597900801]
+position = Vector2(4, 7)
+shape = SubResource("CircleShape2D_4b0ck")

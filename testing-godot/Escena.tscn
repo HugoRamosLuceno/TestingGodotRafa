@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d02lk3iyv27ww"]
+
+[ext_resource type="PackedScene" uid="uid://bawcimsiippf6" path="res://Personaje Rosa.tscn" id="1_1wh3i"]
+[ext_resource type="PackedScene" uid="uid://diqypf0e5a1sn" path="res://Puente.tscn" id="2_prhk0"]
+[ext_resource type="PackedScene" uid="uid://d02lk3iyv27ww" path="res://Escena.tscn" id="3_1wh3i"]
+
+[node name="Node2D" type="Node2D" unique_id=1844685295]
+
+[node name="Node2D" parent="." unique_id=1102730740 instance=ExtResource("2_prhk0")]
+position = Vector2(27, 613)
+
+[node name="Node2D2" parent="." unique_id=2098684378 instance=ExtResource("1_1wh3i")]
+position = Vector2(63, 448)
+
+[node name="Node2D3" parent="." unique_id=1136323431 instance=ExtResource("3_1wh3i")]
+position = Vector2(241, 455)
